@@ -1,0 +1,80 @@
+:root {
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+  --sidebar: #0c1a2e;
+  --sidebar-active: #16375f;
+  --page-bg: #f2f4f7;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e8ebf0;
+  --el-color-primary: #2563eb;
+  --el-border-radius-base: 4px;
+  --el-font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--el-font-family);
+  color: var(--text-main);
+  background: var(--page-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.el-table th.el-table__cell {
+  background: #fff;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.el-table td.el-table__cell {
+  font-size: 13px;
+}
+
+.el-table__inner-wrapper::before {
+  display: none;
+}
+
+.el-card,
+.el-dialog {
+  border-radius: 8px;
+}
